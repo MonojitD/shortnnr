@@ -81,15 +81,15 @@ const LinkPage = () => {
       )}
       <div className="flex flex-col gap-8 sm:flex-row justify-between">
         <div className="flex flex-col items-start gap-8 rounded-lg sm:w-2/5">
-          <span className="text-6xl font-extrabold hover:underline cursor-pointer">
+          <span className="text-2xl sm:text-6xl font-extrabold hover:underline cursor-pointer">
             {url?.title}
           </span>
           <a
-            href={`https://trimrr.in/${link}`}
+            href={`https://shortnnr.vercel.app/${link}`}
             target="_blank"
-            className="text-3xl sm:text-4xl text-primary font-bold hover:underline cursor-pointer"
+            className="text-sm sm:text-4xl text-primary font-bold hover:underline cursor-pointer"
           >
-            https://trimrr.in/{link}
+            https://shortnnr.vercel.app/{link}
           </a>
           <a
             href={url?.original_url}
@@ -106,7 +106,7 @@ const LinkPage = () => {
             <Button
             variant="ghost"
             onClick={() =>
-              navigator.clipboard.writeText(`https://trimrr.in/${link}`)
+              navigator.clipboard.writeText(`https://shortnnr.vercel.app/${link}`)
             }
           >
             <Dialog>
@@ -118,7 +118,7 @@ const LinkPage = () => {
                   <DialogTitle className="mx-auto">Short link copied</DialogTitle>
                 </DialogHeader>
                 <span className="text-2xl text-primary font-bold cursor-pointer mx-auto">
-                  https://trimrr.in/{url?.custom_url ? url?.custom_url : link}
+                  https://shortnnr.vercel.app/{url?.custom_url ? url?.custom_url : link}
                 </span>
               </DialogContent>
             </Dialog>

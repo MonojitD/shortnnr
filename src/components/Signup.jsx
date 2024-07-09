@@ -114,7 +114,8 @@ const Signup = () => {
           />
         </div>
         {errors.password && <Error message={errors.password} />}
-        <div className="space-y-1">
+        <div className="space-y-1 border-[1px] rounded-md px-3 py-2">
+          <span className="text-sm text-muted-foreground">Upload Profile Picture</span>
           <input
             name="profile_pic"
             type="file"
@@ -127,7 +128,7 @@ const Signup = () => {
       <CardFooter>
         <Button onClick={handleSignup}>
           {loading ? (
-            <BeatLoader size={10} color="#facc15" />
+            <BeatLoader size={10} color="#000" />
           ) : (
             "Create Account"
           )}

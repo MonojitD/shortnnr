@@ -1,4 +1,4 @@
-# Shortnnr - Best URLs Shortener 🔗                        [👉🏼 Live Demo🔴](https://mdex.vercel.app/)
+# Shortnnr - Best URLs Shortener 🔗                        [👉🏼 Live Demo🔴](https://shortnnr.vercel.app/)
 
 Shortnnr is a URL shortener website that simplifies long links, making them cleaner and easier to share. It stores shortened links along with click counts and the location data of clicks, providing valuable insights into link performance and audience behavior.
 
@@ -25,7 +25,7 @@ To get started with Shortnnr, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone <repository-url>
+   git clone https://github.com/MonojitD/shortnnr.git
    ```
 
 2. Install dependencies:

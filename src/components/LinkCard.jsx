@@ -47,10 +47,10 @@ const LinkCard = ({url = [], fetchUrls}) => {
         <span className="text-3xl font-extrabold hover:underline cursor-pointer">
           {url?.title}
         </span>
-        <span className="text-2xl text-primary font-bold hover:underline cursor-pointer">
-          https://trimrr.in/{url?.custom_url ? url?.custom_url : url.short_url}
+        <span className="text-sm sm:text-2xl text-primary font-bold hover:underline cursor-pointer">
+          https://shortnnr.vercel.app/{url?.custom_url ? url?.custom_url : url.short_url}
         </span>
-        <span className="flex items-center gap-1 hover:underline cursor-pointer">
+        <span className="text-sm sm:text-xl flex items-center gap-1 hover:underline cursor-pointer">
           <LinkIcon className="p-1" />
           {url?.original_url}
         </span>
@@ -62,7 +62,7 @@ const LinkCard = ({url = [], fetchUrls}) => {
         <Button
           variant="ghost"
           onClick={() =>
-            navigator.clipboard.writeText(`https://trimrr.in/${url?.short_url}`)
+            navigator.clipboard.writeText(`https://shortnnr.vercel.app/${url?.short_url}`)
           }
         >
           <Dialog>
@@ -73,8 +73,8 @@ const LinkCard = ({url = [], fetchUrls}) => {
               <DialogHeader>
                 <DialogTitle className="mx-auto">Short link copied</DialogTitle>
               </DialogHeader>
-              <span className="text-2xl text-primary font-bold cursor-pointer mx-auto">
-                https://trimrr.in/{url?.custom_url ? url?.custom_url : url.short_url}
+              <span className="text-sm sm:text-2xl text-primary font-bold cursor-pointer mx-auto">
+                https://shortnnr.vercel.app/{url?.custom_url ? url?.custom_url : url.short_url}
               </span>
             </DialogContent>
           </Dialog>

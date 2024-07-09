@@ -34,11 +34,11 @@ const Landing = () => {
           Shorten !! 
         </Button>
       </form>
-      <div className='py-20 grid grid-cols-3 gap-10'>
+      <div className='py-20 grid sm:grid-cols-3 gap-10'>
       <Card className="flex flex-col items-center">
         <CardHeader className="flex flex-col items-center">
           <Minimize2 size={120} className='text-primary mb-5 drop-shadow-[0_10px_40px_#facc15]'/>
-          <CardTitle>Shorten URLs</CardTitle>
+          <CardTitle className="text-center">Shorten URLs</CardTitle>
         </CardHeader>
         <CardContent>
           <p className='text-center opacity-50'>Makes long links look cleaner and easier to share! Add Custom Links to personalize your URLs with QR Codes.</p>
@@ -47,7 +47,7 @@ const Landing = () => {
       <Card className="flex flex-col items-center">
         <CardHeader className="flex flex-col items-center">
           <MousePointerClick size={120} className='text-primary mb-5 drop-shadow-[0_10px_40px_#facc15]'/>
-          <CardTitle>Get Click Counts</CardTitle>
+          <CardTitle className="text-center">Get Click Counts</CardTitle>
         </CardHeader>
         <CardContent>
           <p className='text-center opacity-50'>Provides real-time click counts for your shortened links, helping you measure engagement easily and efficiently.</p>
@@ -56,7 +56,7 @@ const Landing = () => {
       <Card className="flex flex-col items-center">
         <CardHeader className="flex flex-col items-center">
           <LineChart size={120} className='text-primary mb-5 drop-shadow-[0_10px_40px_#facc15]'/>
-          <CardTitle>Track Link Clicks</CardTitle>
+          <CardTitle className="text-center">Track Link Clicks</CardTitle>
         </CardHeader>
         <CardContent>
           <p className='text-center opacity-50'>Monitor link performance with Shortnrr's detailed click tracking, giving you insights into location and devices.</p>

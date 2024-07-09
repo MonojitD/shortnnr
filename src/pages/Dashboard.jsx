@@ -63,8 +63,8 @@ const Dashboard = () => {
           </CardContent>
         </Card>
       </div>
-      <div className="flex justify-between">
-        <h1 className="text-4xl font-extrabold">My Links</h1>
+      <div className="flex justify-between items-center">
+        <h1 className="text-xl sm:text-4xl font-extrabold">My Links</h1>
         <CreateLink />
       </div>
       <div className="relative">

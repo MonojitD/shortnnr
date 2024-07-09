@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Button } from './ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from './ui/dropdown-menu'
@@ -16,11 +16,12 @@ const Header = () => {
   const {isAuthenticated, user, fetchUser} = UrlState();
   const {loading, fn: fnLogout} = useFetch(logout);
   const userDetails = user?.user_metadata;
+
   return (
     <>
     <nav className="py-4 flex justify-between items-center">
       <Link to="/">
-        <img src="/logo.png" className='h-16' alt="Shrotnnr logo" />
+        <img src="/logo.png" className='sm:h-16' alt="Shrotnnr logo" />
       </Link>
 
       <div className='flex'>
