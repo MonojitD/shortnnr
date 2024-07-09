@@ -81,15 +81,15 @@ const LinkPage = () => {
       )}
       <div className="flex flex-col gap-8 sm:flex-row justify-between">
         <div className="flex flex-col items-start gap-8 rounded-lg sm:w-2/5">
-          <span className="text-2xl sm:text-6xl font-extrabold hover:underline cursor-pointer">
+          <span className="text-2xl sm:text-4xl font-extrabold hover:underline cursor-pointer">
             {url?.title}
           </span>
           <a
             href={`https://shortnnr.vercel.app/${link}`}
             target="_blank"
-            className="text-sm sm:text-4xl text-primary font-bold hover:underline cursor-pointer"
+            className="text-sm sm:text-2xl text-primary font-bold hover:underline cursor-pointer"
           >
-            https://shortnnr.vercel.app/redirect/{link}
+            https://shortnnr.vercel.app/{link}
           </a>
           <a
             href={url?.original_url}
