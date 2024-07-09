@@ -89,7 +89,7 @@ const LinkPage = () => {
             target="_blank"
             className="text-sm sm:text-4xl text-primary font-bold hover:underline cursor-pointer"
           >
-            https://shortnnr.vercel.app/{link}
+            https://shortnnr.vercel.app/redirect/{link}
           </a>
           <a
             href={url?.original_url}
