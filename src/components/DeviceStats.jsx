@@ -24,7 +24,7 @@ export default function DeviceStats({stats}) {
             data={result}
             labelLine={false}
             label={({device, percent}) =>
-              `${device}: ${(percent * 100).toFixed(0)}%`
+              `${device.toUpperCase()}: ${(percent * 100).toFixed(0)}%`
             }
             dataKey="count"
           >

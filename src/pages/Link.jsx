@@ -87,14 +87,14 @@ const LinkPage = () => {
           <a
             href={`https://shortnnr.vercel.app/${link}`}
             target="_blank"
-            className="text-sm sm:text-2xl text-primary font-bold hover:underline cursor-pointer"
+            className="text-sm sm:text-2xl text-primary font-bold hover:underline cursor-pointer break-all"
           >
             https://shortnnr.vercel.app/{link}
           </a>
           <a
             href={url?.original_url}
             target="_blank"
-            className="flex items-center gap-1 hover:underline cursor-pointer"
+            className="flex items-center gap-1 hover:underline cursor-pointer break-all"
           >
             <LinkIcon className="p-1" />
             {url?.original_url}
@@ -156,7 +156,7 @@ const LinkPage = () => {
           </div>
           <img
             src={url?.qr}
-            className="w-full self-center sm:self-start ring ring-ring p-1 object-contain"
+            className="w-[80%] self-center sm:self-start ring ring-ring p-1 object-contain"
             alt="qr code"
           />
         </div>
